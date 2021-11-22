@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	margin:0;
+	padding: 0;
+	color:#000;
+    text-decoration: none;
+}
+
+header nav ul {
+    background-color: #242830; 
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    transition: .2s cubic-bezier(.37,1.89,.59,.73);
+    font-size: 24px;
+    font-family: 'MedievalSharp', cursive;
+}
+ 
+nav a:link {
+    color: white;
+    text-shadow: 2px 1px black;
+}
+  
+nav a:visited {
+    color: yellow;
+}
+
+header a:hover {
+    transform: scale(1.3);
+    color: red;
+}
+
+nav a:active {
+    color: blue;
+}
+
+html, body {
+	min-height: 100%;
+	height: auto
+}
+
+body {
+	background-image:linear-gradient(to bottom ,#202633 0%, #ccc 100%);
+}
+
+#title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #b3b9bf;
+	font-size: 30px;
+	margin: 25px 0;
+}
+
+#title:hover {
+	color: white;
+}
+
+.main {
+	width: 880px;
+	height: 100%;
+	margin: 15px auto;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.main:after {
+	display: block;
+	content: '.';
+	line-height: 0;
+	visibility: hidden;
+}
+
+.stilering {
+	display: block;
+	width: 880px;
+	list-style: none;
+}
+
+.stilering li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 400px;
+	height: 300px;
+	margin:20px;
+	cursor: pointer;
+}
+
+.stilering li img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 999;
+	position: absolute;
+	transition:.8s;
+}
+
+.stilering li:hover img {
+	margin-top:-80px;
+}
+
+.informacao {
+	display: block;
+	width: 100%;
+	height: 80px;
+	background-color:#202633;
+	overflow: hidden;
+	color: #fff;
+	margin-top: 220px;
+}
+
+.informacao p {
+	display: block;
+	color: #fff;
+	position: relative;
+	float: left;
+	width: 250px;
+	margin:10px;
+	margin-bottom: 0;
+	font-family: 'Lato', sans-serif;
+	text-indent: 10px;
+
+}
+
+.vermais, .vermais2, .vermais3, .vermais4, .vermais5, .vermais6 {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	float: right;
+	padding:3px 10px;
+	background: #AE2341;
+	border-radius: 4px;
+	margin:10px;
+}
+
+.nome-foto {
+	font-size:18px;
+}
+
+.descricao {
+	font-size: 14px;
+}
+
+.button {
+    font-family: cursive;
+	font-size: 15px;
+	color: lightgrey;
+	display: block;
+	padding: 3px 100px;
+	background-color: white;
+	border-radius: 5px;
+	border-color: white;
+	margin: auto;
+	cursor: pointer;
+}
+
+.none, .none2, .none3, .none4, .none5, .none6 {
+    display: none;
+	background-color:#202633;
+	width: 100%;
+	margin: auto;
+	font-family: Arial;
+	padding-top: 10px;
+}
+
+div p {
+	color: white;
+}
+
+.feio, .feio2, .feio3 {
+	display: none;
+}
+
+@media (max-width: 680px) {
+    nav ul {
+    display: flex;
+    flex-direction: column;
+}
+    main ul li a, nav a {
+    font-size: 20px;
+}
+}
